@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — Salah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green:  #1A3A2A;
+      --mid:    #2D6A4F;
+      --gold:   #D4AF37;
+      --bright: #F4C842;
+      --cream:  #FDF8EE;
+      --muted:  rgba(253,248,238,0.55);
+      --border: rgba(212,175,55,0.2);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--green);
+      color: var(--cream);
+      min-height: 100vh;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 1.4rem 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+      background: rgba(26,58,42,0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+    .logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem; font-weight: 600; letter-spacing: 0.12em;
+      color: var(--bright); text-transform: uppercase;
+      text-decoration: none;
+    }
+    .nav-link {
+      font-size: 0.78rem; font-weight: 500; letter-spacing: 0.08em;
+      color: var(--green); background: var(--bright);
+      padding: 0.55rem 1.3rem; border-radius: 100px;
+      text-decoration: none; text-transform: uppercase;
+      transition: opacity 0.2s;
+    }
+    .nav-link:hover { opacity: 0.85; }
+
+    /* ── CONTENT ── */
+    .page {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 8rem 2rem 6rem;
+    }
+
+    .page-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 600;
+      line-height: 1.15;
+      color: var(--cream);
+      margin-bottom: 0.6rem;
+    }
+
+    .last-updated {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 3.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--bright);
+      margin-top: 2.8rem;
+      margin-bottom: 0.9rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: rgba(253,248,238,0.82);
+      margin-bottom: 1.1rem;
+    }
+
+    ul, ol {
+      padding-left: 1.5rem;
+      margin-bottom: 1.1rem;
+    }
+
+    li {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: rgba(253,248,238,0.82);
+      margin-bottom: 0.4rem;
+    }
+
+    a {
+      color: var(--gold);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    a:hover { color: var(--bright); }
+
+    .highlight-box {
+      background: rgba(212,175,55,0.08);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--gold);
+      border-radius: 6px;
+      padding: 1.2rem 1.4rem;
+      margin: 1.8rem 0;
+    }
+    .highlight-box p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: rgba(253,248,238,0.75);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 1rem;
+    }
+    .footer-links a {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+    }
+    .footer-links a:hover { color: var(--cream); }
+    .footer-copy {
+      font-size: 0.75rem;
+      color: rgba(253,248,238,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="logo" href="index.html">Salah</a>
+    <a class="nav-link" href="index.html#download">Download Now</a>
+  </nav>
+
+  <div class="page">
+    <p class="page-label">Legal</p>
+    <h1>Terms of Service</h1>
+    <p class="last-updated">Last updated: 17 May 2025</p>
+
+    <p>Please read these Terms of Service carefully before using the Salah app. By downloading, installing, or using Salah, you agree to be bound by these terms. If you do not agree, do not use the app.</p>
+
+    <h2>1. About Salah</h2>
+    <p>Salah is a Muslim prayer companion application designed to help users maintain their five daily prayers through prayer time reminders, app focus features, a gamified tracker, daily guidance, and Islamic educational content. The app is developed and operated as a personal software product.</p>
+
+    <h2>2. Eligibility</h2>
+    <p>You must be at least 13 years old to use Salah. By using the app, you represent that you meet this requirement. If you are under 18, you should review these terms with a parent or guardian.</p>
+
+    <h2>3. Subscription and Billing</h2>
+    <p>Salah is offered on a subscription basis:</p>
+    <ul>
+      <li><strong>Free Trial:</strong> New users receive a 5-day free trial with full access to all features. No charge is made during the trial period.</li>
+      <li><strong>Subscription:</strong> After the trial, continued access requires a paid subscription at £9.99 per month (or the local equivalent).</li>
+      <li><strong>Billing:</strong> Subscriptions are billed monthly through the App Store (iOS) or Google Play (Android). Payment is charged to your app store account at confirmation of purchase.</li>
+      <li><strong>Renewal:</strong> Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current period.</li>
+      <li><strong>Cancellation:</strong> You may cancel at any time through your device's subscription management settings. Access continues until the end of the paid period; no partial refunds are provided.</li>
+      <li><strong>Price Changes:</strong> We may change subscription prices with reasonable notice. Continued use after a price change constitutes acceptance of the new price.</li>
+    </ul>
+
+    <div class="highlight-box">
+      <p>Subscriptions are managed entirely by Apple App Store or Google Play. We do not have direct access to your payment information. Refund requests must be submitted through the relevant app store.</p>
+    </div>
+
+    <h2>4. Permitted Use</h2>
+    <p>Salah is licensed to you for personal, non-commercial use only. You may not:</p>
+    <ul>
+      <li>Copy, modify, or distribute the app or its content</li>
+      <li>Reverse engineer, decompile, or disassemble the app</li>
+      <li>Use the app for any unlawful purpose</li>
+      <li>Attempt to gain unauthorised access to any part of the service</li>
+      <li>Share your account credentials with others</li>
+    </ul>
+
+    <h2>5. Prayer Times and Religious Content</h2>
+    <p>Prayer times are calculated using the Aladhan API based on your location and chosen calculation method. While we aim for accuracy, prayer times are provided as a guide only. We are not responsible for inaccuracies resulting from incorrect location data, calculation method selection, or third-party API issues.</p>
+    <p>Hadith, Quran verses, and other religious content are sourced from publicly available APIs and curated collections. We endeavour to present authentic content but make no scholarly guarantee of completeness or contextual interpretation. Users should consult qualified Islamic scholars for religious guidance.</p>
+
+    <h2>6. App Lock Feature</h2>
+    <p>Salah's app focus feature works by displaying a full-screen overlay at prayer times. On supported iOS devices, the app may utilise Apple's Screen Time framework to restrict access to other applications during prayer windows, subject to device permissions granted by the user. This feature:</p>
+    <ul>
+      <li>Requires explicit user permission and can be disabled at any time in settings</li>
+      <li>Is designed as a spiritual aid, not a parental control or enforcement mechanism</li>
+      <li>May not function on all devices or OS versions</li>
+    </ul>
+
+    <h2>7. Data and Privacy</h2>
+    <p>Your privacy matters. Our <a href="privacy.html">Privacy Policy</a> explains how we collect, use, and protect your personal data. By using Salah, you agree to our Privacy Policy.</p>
+
+    <h2>8. Third-Party Services</h2>
+    <p>Salah uses the following third-party services. Their respective terms and policies apply:</p>
+    <ul>
+      <li><strong>RevenueCat</strong> — subscription management</li>
+      <li><strong>Aladhan API</strong> — prayer time calculation</li>
+      <li><strong>OpenStreetMap / Overpass API</strong> — mosque finder</li>
+      <li><strong>Hadith API (api.hadith.gading.dev)</strong> — daily hadith</li>
+      <li><strong>Al-Quran Cloud</strong> — Quran verses</li>
+    </ul>
+    <p>We are not responsible for the availability, accuracy, or conduct of these third-party services.</p>
+
+    <h2>9. Intellectual Property</h2>
+    <p>All original content within Salah — including the app design, graphics, copy, branding, and code — is owned by us and protected by intellectual property law. Islamic texts (Quran, Hadith) are in the public domain; their translations may carry separate rights.</p>
+
+    <h2>10. Disclaimer of Warranties</h2>
+    <p>Salah is provided "as is" and "as available" without warranties of any kind, either express or implied. We do not warrant that the app will be uninterrupted, error-free, or free of harmful components. Your use of the app is entirely at your own risk.</p>
+
+    <h2>11. Limitation of Liability</h2>
+    <p>To the fullest extent permitted by law, we shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of Salah, including but not limited to loss of data, loss of profits, or disruption of service.</p>
+
+    <h2>12. Governing Law</h2>
+    <p>These terms are governed by the laws of England and Wales. Any disputes arising from these terms shall be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+
+    <h2>13. Changes to These Terms</h2>
+    <p>We may update these terms from time to time. We will notify you of significant changes via the app or by updating the "Last updated" date above. Continued use of Salah after changes constitutes acceptance of the revised terms.</p>
+
+    <h2>14. Contact</h2>
+    <p>If you have questions about these terms, please contact us at <a href="mailto:support@salahapp.co">support@salahapp.co</a>.</p>
+
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+    <p class="footer-copy">© 2025 Salah. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

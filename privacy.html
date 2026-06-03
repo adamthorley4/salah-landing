@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Salah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green:  #1A3A2A;
+      --mid:    #2D6A4F;
+      --gold:   #D4AF37;
+      --bright: #F4C842;
+      --cream:  #FDF8EE;
+      --muted:  rgba(253,248,238,0.55);
+      --border: rgba(212,175,55,0.2);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--green);
+      color: var(--cream);
+      min-height: 100vh;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 1.4rem 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+      background: rgba(26,58,42,0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+    .logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem; font-weight: 600; letter-spacing: 0.12em;
+      color: var(--bright); text-transform: uppercase;
+      text-decoration: none;
+    }
+    .nav-link {
+      font-size: 0.78rem; font-weight: 500; letter-spacing: 0.08em;
+      color: var(--green); background: var(--bright);
+      padding: 0.55rem 1.3rem; border-radius: 100px;
+      text-decoration: none; text-transform: uppercase;
+      transition: opacity 0.2s;
+    }
+    .nav-link:hover { opacity: 0.85; }
+
+    /* ── CONTENT ── */
+    .page {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 8rem 2rem 6rem;
+    }
+
+    .page-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 600;
+      line-height: 1.15;
+      color: var(--cream);
+      margin-bottom: 0.6rem;
+    }
+
+    .last-updated {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 3.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--bright);
+      margin-top: 2.8rem;
+      margin-bottom: 0.9rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: rgba(253,248,238,0.82);
+      margin-bottom: 1.1rem;
+    }
+
+    ul, ol {
+      padding-left: 1.5rem;
+      margin-bottom: 1.1rem;
+    }
+
+    li {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: rgba(253,248,238,0.82);
+      margin-bottom: 0.4rem;
+    }
+
+    a {
+      color: var(--gold);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    a:hover { color: var(--bright); }
+
+    .highlight-box {
+      background: rgba(212,175,55,0.08);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--gold);
+      border-radius: 6px;
+      padding: 1.2rem 1.4rem;
+      margin: 1.8rem 0;
+    }
+    .highlight-box p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: rgba(253,248,238,0.75);
+    }
+
+    /* ── DATA TABLE ── */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.88rem;
+    }
+    .data-table th {
+      text-align: left;
+      padding: 0.7rem 1rem;
+      background: rgba(212,175,55,0.1);
+      color: var(--gold);
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid var(--border);
+    }
+    .data-table td {
+      padding: 0.7rem 1rem;
+      color: rgba(253,248,238,0.75);
+      border-bottom: 1px solid rgba(212,175,55,0.08);
+      vertical-align: top;
+      line-height: 1.6;
+    }
+    .data-table tr:last-child td { border-bottom: none; }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 1rem;
+    }
+    .footer-links a {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+    }
+    .footer-links a:hover { color: var(--cream); }
+    .footer-copy {
+      font-size: 0.75rem;
+      color: rgba(253,248,238,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="logo" href="index.html">Salah</a>
+    <a class="nav-link" href="index.html#download">Download Now</a>
+  </nav>
+
+  <div class="page">
+    <p class="page-label">Legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="last-updated">Last updated: 17 May 2025</p>
+
+    <p>Your privacy is important to us. This Privacy Policy explains what information Salah collects, how it is used, and the choices you have. We have designed Salah to be a private spiritual tool — we collect only what is necessary for the app to function.</p>
+
+    <div class="highlight-box">
+      <p><strong>Short version:</strong> Almost everything Salah stores stays on your device. We do not sell your personal data. We do not build advertising profiles. Location is used only to calculate prayer times and is never stored on our servers.</p>
+    </div>
+
+    <h2>1. Information We Collect</h2>
+
+    <h2 style="font-size:1.05rem; margin-top:1.6rem; color: var(--cream);">1a. Information stored locally on your device</h2>
+    <p>The following data is stored only on your device using SQLite and AsyncStorage. It never leaves your device except as described below.</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Purpose</th>
+          <th>Where stored</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Prayer records (which prayers you completed, timestamps)</td>
+          <td>Tracker, streak, and points calculation</td>
+          <td>Device (SQLite)</td>
+        </tr>
+        <tr>
+          <td>Journal entries (mood, notes, Sadaqah records)</td>
+          <td>Personal reflection journal</td>
+          <td>Device (SQLite)</td>
+        </tr>
+        <tr>
+          <td>Your name and onboarding answers</td>
+          <td>Personalising the app experience</td>
+          <td>Device (AsyncStorage)</td>
+        </tr>
+        <tr>
+          <td>Niyyah signature (drawn during onboarding)</td>
+          <td>Personal spiritual reminder, shown only to you</td>
+          <td>Device (AsyncStorage)</td>
+        </tr>
+        <tr>
+          <td>App settings (calculation method, madhab, notifications)</td>
+          <td>Configuring the app to your preferences</td>
+          <td>Device (AsyncStorage)</td>
+        </tr>
+        <tr>
+          <td>Cached prayer times</td>
+          <td>Offline access to today's prayer schedule</td>
+          <td>Device (AsyncStorage)</td>
+        </tr>
+        <tr>
+          <td>Cached daily Hadith and Quran verse</td>
+          <td>Reducing API calls; offline guidance access</td>
+          <td>Device (SQLite)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 style="font-size:1.05rem; margin-top:1.6rem; color: var(--cream);">1b. Location data</h2>
+    <p>Salah requests access to your device location solely to calculate accurate local prayer times. We use your GPS coordinates to query the Aladhan prayer times API. Your coordinates are sent to Aladhan's servers for this calculation but are not stored on our servers. Location is not used for advertising, profiling, or any purpose beyond prayer time calculation.</p>
+    <p>You can deny or revoke location access at any time in your device settings. If you do, you can enter your city manually instead.</p>
+
+    <h2 style="font-size:1.05rem; margin-top:1.6rem; color: var(--cream);">1c. Subscription data</h2>
+    <p>Subscription management is handled entirely by RevenueCat and your device's app store (Apple App Store or Google Play). We receive anonymised entitlement status (active/inactive subscription) from RevenueCat to gate app features. We do not receive or store your payment card details, billing address, or full purchase history.</p>
+    <p>RevenueCat's privacy policy is available at <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a>.</p>
+
+    <h2>2. Information We Do Not Collect</h2>
+    <ul>
+      <li>We do not collect your email address or create user accounts</li>
+      <li>We do not run analytics SDKs or crash reporting services in v1</li>
+      <li>We do not use advertising networks or track you across apps</li>
+      <li>We do not share your journal entries, prayer records, or personal data with third parties</li>
+      <li>We do not have access to your microphone, camera, or contacts</li>
+    </ul>
+
+    <h2>3. Third-Party Services</h2>
+    <p>Salah communicates with the following external services. Each has its own privacy policy:</p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Purpose</th>
+          <th>Data sent</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Aladhan API (aladhan.com)</td>
+          <td>Prayer time calculation</td>
+          <td>Latitude, longitude, calculation method</td>
+        </tr>
+        <tr>
+          <td>OpenStreetMap / Overpass API</td>
+          <td>Mosque finder</td>
+          <td>Approximate location (rounded to 2 decimal places)</td>
+        </tr>
+        <tr>
+          <td>api.hadith.gading.dev</td>
+          <td>Daily Hadith</td>
+          <td>None (public API, no personal data)</td>
+        </tr>
+        <tr>
+          <td>Al-Quran Cloud (api.alquran.cloud)</td>
+          <td>Daily Quran verse</td>
+          <td>None (public API, no personal data)</td>
+        </tr>
+        <tr>
+          <td>RevenueCat</td>
+          <td>Subscription management</td>
+          <td>Device ID (anonymised), entitlement status</td>
+        </tr>
+        <tr>
+          <td>Google Fonts</td>
+          <td>Typography (landing website only)</td>
+          <td>IP address (standard web request)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>4. Push Notifications</h2>
+    <p>Salah sends local notifications for prayer times. These are scheduled on-device and do not pass through our servers. No personal data is transmitted when a notification fires. You can disable notifications at any time in your device settings or within the app.</p>
+
+    <h2>5. App Lock and Screen Time</h2>
+    <p>On supported iOS devices, Salah may use Apple's Screen Time / FamilyControls framework to restrict access to other apps during prayer windows. This is an on-device feature managed by iOS. We do not receive data about which apps are restricted, how long they were blocked, or your usage patterns. The feature requires your explicit authorisation and can be revoked at any time in iOS Settings → Screen Time.</p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>Salah is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided us with personal information, please contact us and we will take steps to delete it.</p>
+
+    <h2>7. Data Retention and Deletion</h2>
+    <p>Because your data is stored locally on your device, you control it directly. You can:</p>
+    <ul>
+      <li><strong>Delete the app</strong> — removes all locally stored data (prayer records, journal, settings, etc.)</li>
+      <li><strong>Clear cache</strong> — available in Settings within the app</li>
+      <li><strong>Delete journal entries</strong> — from within the journal screen</li>
+    </ul>
+    <p>Any data shared with RevenueCat for subscription management can be deleted by contacting RevenueCat directly or us at the address below.</p>
+
+    <h2>8. Security</h2>
+    <p>Your data is stored on your own device using iOS and Android's standard secure storage mechanisms. We do not operate servers that store your personal prayer or journal data. Network requests to third-party APIs (prayer times, Hadith, Quran) use HTTPS encryption.</p>
+
+    <h2>9. Your Rights (UK / EEA Users)</h2>
+    <p>If you are located in the UK or European Economic Area, you have certain rights under data protection law, including the right to access, correct, or delete personal data we hold about you. Since most data is stored locally on your device, you can exercise these rights directly. For data held by RevenueCat, contact them directly or contact us and we will assist.</p>
+    <p>We do not operate as a data controller in the traditional sense for most data, as it never reaches our servers.</p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy as the app evolves. We will notify you of significant changes via the app or by updating the "Last updated" date above. Continued use of Salah after changes constitutes acceptance of the revised policy.</p>
+
+    <h2>11. Contact Us</h2>
+    <p>If you have questions or concerns about this Privacy Policy or how your data is handled, please contact us at:</p>
+    <p><a href="mailto:privacy@salahapp.co">privacy@salahapp.co</a></p>
+
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+    <p class="footer-copy">© 2025 Salah. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
