@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — Salah</title>
+  <meta name="description" content="Get help with the Salah app. We respond to every message." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:         #1A3A2A;
+      --surface:    #1f4431;
+      --accent:     #F4C842;
+      --accent-dim: rgba(244, 200, 66, 0.18);
+      --text:       #FDF8EE;
+      --muted:      rgba(253, 248, 238, 0.55);
+      --border:     rgba(244, 200, 66, 0.2);
+      --border-hi:  rgba(244, 200, 66, 0.55);
+    }
+
+    html {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      line-height: 1.75;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ─── NAV ─── */
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 6vw;
+      border-bottom: 1px solid var(--border);
+      background: rgba(26, 58, 42, 0.96);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      font-size: 1.05rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .nav-back {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      padding: 0.42rem 1.1rem;
+      border-radius: 999px;
+      transition: color 0.22s, border-color 0.22s, background 0.22s;
+    }
+
+    .nav-back:hover {
+      color: var(--accent);
+      border-color: var(--border-hi);
+      background: var(--accent-dim);
+    }
+
+    /* ─── CONTENT ─── */
+
+    main {
+      flex: 1;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 5rem 6vw;
+      width: 100%;
+    }
+
+    .page-eyebrow {
+      font-size: 0.67rem;
+      font-weight: 500;
+      letter-spacing: 0.38em;
+      text-transform: uppercase;
+      color: var(--accent);
+      opacity: 0.85;
+      margin-bottom: 0.85rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 1.5rem;
+      line-height: 1.1;
+    }
+
+    p {
+      font-size: 0.93rem;
+      color: var(--muted);
+      line-height: 1.85;
+      margin-bottom: 1.3rem;
+    }
+
+    /* Get in touch button */
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      margin-top: 0.75rem;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--accent);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      padding: 0.65rem 1.5rem;
+      border-radius: 999px;
+      transition: background 0.22s, border-color 0.22s;
+    }
+
+    .contact-btn:hover {
+      background: var(--accent-dim);
+      border-color: var(--border-hi);
+    }
+
+    /* ─── FOOTER ─── */
+
+    footer {
+      text-align: center;
+      padding: 2rem 6vw;
+      border-top: 1px solid var(--border);
+      font-size: 0.76rem;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .footer-btn {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      padding: 0.4rem 1.1rem;
+      border-radius: 999px;
+      transition: color 0.22s, border-color 0.22s, background 0.22s;
+    }
+
+    .footer-btn:hover {
+      color: var(--accent);
+      border-color: var(--border-hi);
+      background: var(--accent-dim);
+    }
+
+    @media (max-width: 600px) {
+      main { padding: 3.5rem 6vw; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav role="navigation" aria-label="Main navigation">
+    <a class="nav-logo" href="index.html">Salah</a>
+    <a class="nav-back" href="index.html">← Back</a>
+  </nav>
+
+  <main>
+    <p class="page-eyebrow">Help</p>
+    <h1>Support</h1>
+    <p>Have a question or need help? Get in touch — we respond to every message.</p>
+    <!-- REPLACE href="#" WITH YOUR CONTACT URL -->
+    <a class="contact-btn" href="#">Get in touch →</a>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a class="footer-btn" href="privacy.html">Privacy Policy</a>
+      <a class="footer-btn" href="support.html">Support</a>
+    </div>
+    <p>© 2026 Salah. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
