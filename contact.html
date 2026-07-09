@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Salah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green:  #1A3A2A;
+      --mid:    #2D6A4F;
+      --gold:   #D4AF37;
+      --bright: #F4C842;
+      --cream:  #FDF8EE;
+      --muted:  rgba(253,248,238,0.55);
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--green);
+      color: var(--cream);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 2rem;
+      border-bottom: 1px solid rgba(212,175,55,0.2);
+    }
+
+    header a {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--bright);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+    }
+
+    main {
+      flex: 1;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+      width: 100%;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.8rem;
+      font-weight: 600;
+      color: var(--bright);
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 1rem;
+      margin-bottom: 3rem;
+      line-height: 1.6;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    label {
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(212,175,55,0.3);
+      border-radius: 8px;
+      padding: 0.85rem 1rem;
+      color: var(--cream);
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: var(--gold);
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    button[type="submit"] {
+      background: var(--gold);
+      color: var(--green);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.05em;
+      border: none;
+      border-radius: 8px;
+      padding: 0.9rem 2rem;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+      align-self: flex-start;
+    }
+
+    button[type="submit"]:hover {
+      background: var(--bright);
+      transform: translateY(-1px);
+    }
+
+    .success {
+      display: none;
+      background: rgba(45,106,79,0.4);
+      border: 1px solid rgba(212,175,55,0.3);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      color: var(--cream);
+      margin-top: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+      border-top: 1px solid rgba(212,175,55,0.1);
+    }
+
+    footer a { color: var(--gold); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="/">☪ Salah</a>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+    <p class="subtitle">Have a question or concern? Send us a message and we'll get back to you as soon as possible.</p>
+
+    <form action="mailto:adamthorley4@hotmail.co.uk" method="POST" enctype="text/plain">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="your@email.com" required />
+      </div>
+      <div>
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+      </div>
+      <button type="submit">Send message</button>
+    </form>
+
+    <div class="success" id="success">
+      ✓ Message sent — we'll be in touch shortly.
+    </div>
+  </main>
+
+  <footer>
+    <a href="/privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+    <a href="/terms.html">Terms of Use</a>
+    <br /><br />
+    © 2026 Adam Thorley
+  </footer>
+
+</body>
+</html>
